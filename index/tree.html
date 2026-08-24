@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Background Example</title>
+
+    <style>
+        /* CSS */
+
+        #box {
+            display: block;
+            width: 400px;
+            height: 250px;
+            padding: 20px;
+            text-align: center;
+
+            background: lightblue;
+            background-color: lightgreen;
+            background-image: url("image.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HTML -->
+    <div id="box">
+        <h1>Hello World</h1>
+        <p>Display, Background, Background Color and Background Image</p>
+    </div>
+
+    <br>
+
+    <button onclick="changeStyle()">
+        Change Background
+    </button>
+
+    <script>
+        // JavaScript
+        function changeStyle() {
+
+            document.getElementById("box").style.display = "block";
+
+            document.getElementById("box").style.background =
+                "lightblue";
+
+            document.getElementById("box").style.backgroundColor =
+                "yellow";
+
+            document.getElementById("box").style.backgroundImage =
+                "url('image.jpg')";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Change</title>
+    <style>
+
+    body {
+    text-align: center;
+    font-family: Arial;
+}
+
+#box {
+    width: 400px;
+    height: 300px;
+    margin: 30px auto;
+    padding: 20px;
+
+    /* Background */
+    background: lightblue;
+
+    /* Background Color */
+    background-color: lightblue;
+
+    /* Background Image */
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+
+    /* Display */
+    display: block;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+}
+</style>
+</head>
+
+<body>
+
+    <div id="box">
+        <h2>Background Image</h2>
+    </div>
+
+    <button onclick="showBox()">Display</button>
+
+    <button onclick="changeColor()">Background Color</button>
+
+    <button onclick="changeImage()">Background Image</button>
+
+    <button onclick="hideBox()">Hide</button>
+
+    <script>
+    function showBox() {
+    document.getElementById("box").style.display = "block";
+}
+
+function hideBox() {
+    document.getElementById("box").style.display = "none";
+}
+
+function changeColor() {
+    document.getElementById("box").style.backgroundColor = "green";
+}
+
+function changeImage() {
+    document.getElementById("box").style.backgroundImage =
+        'url("image.jpg")';
+}
+</script>
+
+</body>
+</html>
